@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+        <th scope="col">
+            Sport Name
+        </th>
+        <th scope="col">
+            Count Of Votes
+        </th>
+    </thead>
+    <tbody *ngFor="let survey of surveyList">
+        <td scope="col">
+            {{survey.sport.name}}
+        </td>
+        <td scope="col">
+            {{survey.countOfVotes}}
+        </td>
+    </tbody>
+</table>

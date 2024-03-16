@@ -1,0 +1,7 @@
+<p>Select below sport from the list:</p>
+<form [formGroup]="castVoteFormGroup" (ngSubmit)="castVote()">
+<select class="form-select mb-3" aria-label="Default select example" formControlName="selectSport">
+    <option *ngFor="let sport of sportList" value="{{sport.id}}">{{sport.name}}</option>
+</select>
+<button class="btn btn-primary">Cast A Vote</button>
+</form>

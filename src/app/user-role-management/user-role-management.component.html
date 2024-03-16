@@ -1,0 +1,23 @@
+<!--<p>user-role-management works!</p>
+<ul *ngFor="let user of users">
+    <li>{{user.email}}</li>
+</ul>
+<hr>
+<ul *ngFor="let role of roles">
+    <li>{{role.name}}</li>
+</ul>-->
+
+<h1>User Role Management</h1>
+<hr>
+<span>Select User : </span>
+<select #userList>
+    <option *ngFor="let user of users" value="{{user.email}}" >{{user.email}}</option>
+</select>
+<hr>
+<span>Select Role :</span>
+<select #roleList>
+    <option *ngFor="let role of roles" value="{{role.name}}" >{{role.name}}</option>
+</select>
+<hr>
+<button class="btn btn-primary" (click)="mapUserToRole(userList.value,roleList.value)">MapUserToRole</button>
+

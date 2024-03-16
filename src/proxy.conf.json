@@ -1,0 +1,13 @@
+{
+    "/login" : {
+        "target" : "http://localhost:5215",
+        "secure" : true,
+        "changeOrigin" : false
+    },
+    "/api" : {
+        "target" : "http://localhost:5215",
+        "secure" : true,
+        "changeOrigin" : false,
+    "headers" : {"Authorization" : "test"}
+    }
+}
